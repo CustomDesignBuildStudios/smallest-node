@@ -9,6 +9,7 @@ class TestSmallestNode(unittest.TestCase):
         self.node3 = Node(10)
         self.node4 = Node(2)
         self.tree = BinaryTree()
+        
         self.tree.insert(self.node1)
         self.tree.insert(self.node2)
         self.tree.insert(self.node3)

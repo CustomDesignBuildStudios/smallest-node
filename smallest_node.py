@@ -6,6 +6,10 @@ class Node:
         self.right = right
 
 
+
+
+
+
 class BinaryTree:
     def __init__(self):
         self.root = None
@@ -29,3 +33,12 @@ class BinaryTree:
                 current_node.right = new_node
 
     # find_smallest goes here
+    def find_smallest(self, node = None):
+        if node == None:
+            node = self.root
+
+        if node.left == None:
+            return node.value
+        else:
+            return self.find_smallest(node.left)
+        
